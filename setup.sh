@@ -89,7 +89,7 @@ if [ ${SKIP_LLVM} = "no" ]
 then
 	if [ ${FETCH} = "yes" ]
 	then
-		wget http://llvm.org/releases/${LLVM_VERSION}/llvm-${LLVM_VERSION}.src.tar.gz || die "Echec du téléchargement de LLVM Vérifiez votre connexion internet."
+		wget http://releases.llvm.org/${LLVM_VERSION}/llvm-${LLVM_VERSION}.src.tar.gz || die "Echec du téléchargement de LLVM Vérifiez votre connexion internet."
 	fi
 	tar -xf llvm-${LLVM_VERSION}.src.tar.gz
 	cd llvm-${LLVM_VERSION}.src
